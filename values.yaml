@@ -13,7 +13,9 @@ defaultImageRegistry: ""
 syncer:
   # Image to use for the syncer
   # image: loftsh/vcluster
-  extraArgs: []
+  extraArgs: [
+  - --tls-san=vc-prod.dev.o527.net
+  ]
   env: []
   livenessProbe:
     enabled: true
